@@ -38,7 +38,7 @@ We are using `npm` as a package manager
 npm install
 ```
 
-### Run Server
+### Run Client
 
 ```
 npm run dev
