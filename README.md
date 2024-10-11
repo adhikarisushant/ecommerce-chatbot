@@ -28,6 +28,10 @@ npm run build
 
 # FRONTEND SETUP
 
+## Create environment variable
+
+Copy environment variables from `.env.example` to `.env.local`
+
 ## Run the application
 
 We are using `npm` as a package manager

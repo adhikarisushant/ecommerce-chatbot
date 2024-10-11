@@ -151,7 +151,7 @@ const defaultTree: ConversationTree = {
 
 const conversationManager = new ConversationManager(defaultTree);
 
-app.post('/api/chat/start', (req, res) => {
+app.post('/api/chat/start', (req: Request, res: Response) => {
   const { customerId } = req.body;
   const state = conversationManager.initializeConversation(customerId);
   const currentNode = conversationManager.getCurrentNode(customerId);
