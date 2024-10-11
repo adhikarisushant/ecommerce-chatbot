@@ -13,7 +13,7 @@ app.use(express.json());
 // cookie parser
 app.use(cookieParser());
 
-// Sample conversation tree
+// Static conversation tree
 const defaultTree: ConversationTree = {
   nodes: {
     welcome: {
@@ -187,7 +187,7 @@ app.get("/test", (req: Request, res: Response, next: NextFunction) => {
     });
   });
 
-  //unknown api route
+//unknown api route
 app.all("*", (req: Request, res: Response, next: NextFunction) => {
     const err = new Error(`Route ${req.originalUrl} not found`) as any;
     err.statusCode = 404;
