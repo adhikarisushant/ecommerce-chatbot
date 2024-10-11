@@ -146,10 +146,7 @@ const defaultTree: ConversationTree = {
 
 // cors
   app.use(
-    cors({
-      origin: ["http://localhost:3000"],
-      credentials: true,
-    })
+    cors()
   );
 
 const conversationManager = new ConversationManager(defaultTree);
